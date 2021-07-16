@@ -1,0 +1,13 @@
+version: '3'
+services:
+  node-reverse-proxy:
+    build: .
+    image: node-reverse-proxy
+    ports:
+      - '5000:5000'
+  nginx-reverse-proxy:
+    restart: always
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"
