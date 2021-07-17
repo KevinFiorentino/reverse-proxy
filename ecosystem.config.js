@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
-    name: "back-usuarios-nodejs",
-    script: "./build/index.js",
+    name: "reverse-proxy",
+    script: "./index.js",
     instances: "2"
   }]
 }
